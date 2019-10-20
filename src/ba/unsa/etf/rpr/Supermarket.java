@@ -7,7 +7,9 @@ public class Supermarket {
 
     public Supermarket(){
         niz=new Artikl[max];
+        brElemenata=0;
     }
+    public int getBrojElemenata() { return this.brElemenata; }
     public boolean dodajArtikl(Artikl temp){
         if(brElemenata>max-1) return false;
         this.niz[brElemenata]=new Artikl(temp.getNaziv(), temp.getCijena(), temp.getKod());
