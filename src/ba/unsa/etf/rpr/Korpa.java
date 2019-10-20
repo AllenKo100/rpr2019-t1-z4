@@ -7,6 +7,7 @@ public class Korpa {
 
     public Korpa(){
         niz=new Artikl[max];
+        brElemenata=0;
     }
     public boolean dodajArtikl(Artikl artikal){
         if(brElemenata>max-1) return false;
@@ -14,6 +15,7 @@ public class Korpa {
         brElemenata++;
         return true;
     }
+    public int getBrojElemenata(){ return this.brElemenata; }
     public Artikl[] getArtikli(){
         return this.niz;
     }
